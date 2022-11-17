@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="DominusApp.jnlp">
+  <information>
+    <title>DominusApp</title>
+    <vendor>gabri</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="DominusApp.jar" size="160613" download="eager" />
+    <jar href="lib\postgresql-42.2.5.jar" size="825943" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DominusApp" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="dominusapp.DominusApp"  name="DominusApp" />
+  <update check="always"/>
+</jnlp>

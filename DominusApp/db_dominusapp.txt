@@ -1,0 +1,12 @@
+CREATE TABLE residente (
+	cdResidente	SERIAL NOT NULL,
+	nome		VARCHAR(40) NOT NULL,
+	cpf       	VARCHAR(14) NOT NULL UNIQUE,
+	email     	VARCHAR(40) NOT NULL,
+	nascimento 	DATE NOT NULL,
+	blocoApt		VARCHAR(2) NOT NULL,
+	numeroApt     	INTEGER NOT NULL,
+	senha     	VARCHAR(40) NOT NULL,
+	CONSTRAINT pk_residente
+      PRIMARY KEY(cdResidente)
+);
